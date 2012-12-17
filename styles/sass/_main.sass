@@ -1,0 +1,69 @@
+body
+  padding: 10em 5em
+
+.form
+  padding: 2em 10em
+  position: absolute
+  width: 100%
+  left: 0
+  top: 1em
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  .icon-seeker
+    width: 100%
+    padding: 1em
+    background: #f1f1f1
+    color: $icon-purple
+    border-radius: 3px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,.4)
+    border: none
+    
+    &:focus
+      outline: none
+      background: #f9f9f9
+
+    &::-webkit-input-placeholder
+      color: lighten($icon-purple, 30)
+
+.item
+  margin: 1em
+  position: relative
+  text-align: center
+  float: left
+  height: 10em
+  width: 10em
+  background: #eee
+  border-radius: 3px
+  font-size: 12px
+  color: $icon-purple
+
+  &:before
+    display: block
+    margin: .8em
+
+.found-items
+  position: absolute
+  top: 10em
+  left: 5em
+  z-index: 1
+
+  & .found
+    background: yellow
+
+@mixin icons($collection)
+  @each $class in $collection
+    .#{nth($class, 1)}
+      +font-icon(nth($class, 2))
+
++icons((('icon-cross' $icon-cross), ('icon-video' $icon-video), ('icon-twitterbird' $icon-twitterbird), ('icon-tv4playicon' $icon-tv4playicon), ('icon-tv' $icon-tv), ('icon-tickets' $icon-tickets), ('icon-tag' $icon-tag), ('icon-star' $icon-star), ('icon-speechbubbles' $icon-speechbubbles), ('icon-speechbubble' $icon-speechbubble), ('icon-speakersound' $icon-speakersound), ('icon-smartphone' $icon-smartphone), ('icon-search' $icon-search), ('icon-quotationmark' $icon-quotationmark), ('icon-questionmark' $icon-questionmark), ('icon-play' $icon-play), ('icon-person' $icon-person), ('icon-people' $icon-people), ('icon-pen' $icon-pen), ('icon-paperstack' $icon-paperstack), ('icon-o_thumbup' $icon-o_thumbup), ('icon-o_tag' $icon-o_tag), ('icon-o_star' $icon-o_star), ('icon-o_speechbubble' $icon-o_speechbubble), ('icon-o_speakerx' $icon-o_speakerx), ('icon-o_search' $icon-o_search), ('icon-o_roundarrow' $icon-o_roundarrow), ('icon-o_persondetails' $icon-o_persondetails), ('icon-o_person' $icon-o_person), ('icon-o_openarrowup' $icon-o_openarrowup), ('icon-o_openarrowright' $icon-o_openarrowright), ('icon-o_openarrowleft' $icon-o_openarrowleft), ('icon-o_openarrowdown' $icon-o_openarrowdown), ('icon-o_heart', $icon-o_heart), ('icon-o_fullarrow' $icon-o_fullarrow), ('icon-o_filmframes' $icon-o_filmframes), ('icon-o_closedarrowup' $icon-o_closedarrowup), ('icon-o_closedarrowright' $icon-o_closedarrowright), ('icon-o_closedarrowleft' $icon-o_closedarrowleft), ('icon-o_closedarrowdown' $icon-o_closedarrowdown), ('icon-newspaper' $icon-newspaper), ('icon-megaphonealt' $icon-megaphonealt), ('icon-megaphone' $icon-megaphone), ('icon-list' $icon-list), ('icon-linkarrow' $icon-linkarrow), ('icon-letter' $icon-letter), ('icon-layers' $icon-layers), ('icon-keyhole' $icon-keyhole), ('icon-heart' $icon-heart), ('icon-hdmark' $icon-hdmark), ('icon-football' $icon-football), ('icon-facebookf' $icon-facebookf), ('icon-eye' $icon-eye), ('icon-cloud' $icon-cloud), ('icon-clockhollow' $icon-clockhollow), ('icon-clock' $icon-clock), ('icon-check' $icon-check), ('icon-checkboard' $icon-checkboard), ('icon-camera' $icon-camera), ('icon-box' $icon-box), ('icon-blankcircle' $icon-blankcircle), ('icon-barchart' $icon-barchart), ('icon-arrowright' $icon-arrowright), ('icon-arrow' $icon-arrow), ('icon-linkarrow-up' $icon-linkarrow-up), ('icon-linkarrow-left' $icon-linkarrow-left), ('icon-linkarrow_down' $icon-linkarrow_down), ('icon-play_up' $icon-play_up), ('icon-play_left' $icon-play_left), ('icon-play_down' $icon-play_down), ('icon-o_camera' $icon-o_camera), ('icon-no_phone' $icon-no_phone), ('icon-no_globe' $icon-no_globe)))
+
+
+
+
+
+

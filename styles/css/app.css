@@ -1,0 +1,660 @@
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+ * HTML5 display definitions
+ * ========================================================================== */
+/* Corrects `block` display not defined in IE 8/9. */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+/* Corrects `inline-block` display not defined in IE 8/9. */
+audio, canvas, video {
+  display: inline-block; }
+
+/* Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* Addresses styling for `hidden` attribute not present in IE 8/9. */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+ * Base
+ * ========================================================================== */
+/* 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom. */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Removes default margin. */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+ * Links
+ * ========================================================================== */
+/* Addresses `outline` inconsistency between Chrome and other browsers. */
+a:focus {
+  outline: thin dotted; }
+a:active, a:hover {
+  outline: 0; }
+
+/* Improves readability when focused and also mouse hovered in all browsers. */
+/* ==========================================================================
+ * Typography
+ * ========================================================================== */
+/* Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome. */
+h1 {
+  font-size: 2em; }
+
+/* Addresses styling not present in IE 8/9, Safari 5, and Chrome. */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b, strong {
+  font-weight: bold; }
+
+/* Addresses styling not present in Safari 5 and Chrome. */
+dfn {
+  font-style: italic; }
+
+/* Addresses styling not present in IE 8/9. */
+mark {
+  background: yellow;
+  color: black; }
+
+/* Corrects font family set oddly in Safari 5 and Chrome. */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/* Improves readability of pre-formatted text in all browsers. */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/* Sets consistent quote types. */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/* Addresses inconsistent and variable font size in all browsers. */
+small {
+  font-size: 80%; }
+
+/* Prevents `sub` and `sup` affecting `line-height` in all browsers. */
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+ * Embedded content
+ * ========================================================================== */
+/* Removes border when inside `a` element in IE 8/9. */
+img {
+  border: 0; }
+
+/* Corrects overflow displayed oddly in IE 9. */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+ * Figures
+ * ========================================================================== */
+/* Addresses margin not present in IE 8/9 and Safari 5. */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+ * Forms
+ * ========================================================================== */
+/* Define consistent border, margin, and padding. */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/* 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/* Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet. */
+button, input {
+  line-height: normal; }
+
+/* 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others. */
+button, html input[type="button"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/* Re-set default cursor for disabled elements. */
+button[disabled] {
+  cursor: default; }
+
+input[disabled] {
+  cursor: default; }
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+/* 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9. */
+/* 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof). */
+/* Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X. */
+/* Removes inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers. */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+ * Tables
+ * ========================================================================== */
+/* Remove most spacing between table cells. */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "tv4icons_v1"; }
+
+@font-face {
+  font-family: "tv4icons_v1";
+  src: url("../../fonts/tv4icons_v1.eot?#iefix") format("embedded-opentype"), url("../../fonts/tv4icons_v1.svg#tv4icons_v1") format("svg"), url("../../fonts/tv4icons_v1.woff") format("woff"), url("../../fonts/tv4icons_v1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon-cross:before, .icon-video:before, .icon-twitterbird:before, .icon-tv4playicon:before, .icon-tv:before, .icon-tickets:before, .icon-tag:before, .icon-star:before, .icon-speechbubbles:before, .icon-speechbubble:before, .icon-speakersound:before, .icon-smartphone:before, .icon-search:before, .icon-quotationmark:before, .icon-questionmark:before, .icon-play:before, .icon-person:before, .icon-people:before, .icon-pen:before, .icon-paperstack:before, .icon-o_thumbup:before, .icon-o_tag:before, .icon-o_star:before, .icon-o_speechbubble:before, .icon-o_speakerx:before, .icon-o_search:before, .icon-o_roundarrow:before, .icon-o_persondetails:before, .icon-o_person:before, .icon-o_openarrowup:before, .icon-o_openarrowright:before, .icon-o_openarrowleft:before, .icon-o_openarrowdown:before, .icon-o_heart:before, .icon-o_fullarrow:before, .icon-o_filmframes:before, .icon-o_closedarrowup:before, .icon-o_closedarrowright:before, .icon-o_closedarrowleft:before, .icon-o_closedarrowdown:before, .icon-newspaper:before, .icon-megaphonealt:before, .icon-megaphone:before, .icon-list:before, .icon-linkarrow:before, .icon-letter:before, .icon-layers:before, .icon-keyhole:before, .icon-heart:before, .icon-hdmark:before, .icon-football:before, .icon-facebookf:before, .icon-eye:before, .icon-cloud:before, .icon-clockhollow:before, .icon-clock:before, .icon-check:before, .icon-checkboard:before, .icon-camera:before, .icon-box:before, .icon-blankcircle:before, .icon-barchart:before, .icon-arrowright:before, .icon-arrow:before, .icon-linkarrow-up:before, .icon-linkarrow-left:before, .icon-linkarrow_down:before, .icon-play_up:before, .icon-play_left:before, .icon-play_down:before, .icon-o_camera:before, .icon-no_phone:before, .icon-no_globe:before {
+  font-family: "tv4icons_v1";
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  padding: 10em 5em; }
+
+.form {
+  padding: 2em 10em;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .form .icon-seeker {
+    width: 100%;
+    padding: 1em;
+    background: #f1f1f1;
+    color: #821cd3;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.4);
+    border: none; }
+    .form .icon-seeker:focus {
+      outline: none;
+      background: #f9f9f9; }
+    .form .icon-seeker::-webkit-input-placeholder {
+      color: #c997f1; }
+
+.item {
+  margin: 1em;
+  position: relative;
+  text-align: center;
+  float: left;
+  height: 10em;
+  width: 10em;
+  background: #eeeeee;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #821cd3; }
+  .item:before {
+    display: block;
+    margin: 0.8em; }
+
+.found-items {
+  position: absolute;
+  top: 10em;
+  left: 5em;
+  z-index: 1; }
+  .found-items .found {
+    background: yellow; }
+
+.icon-cross:before {
+  content: "\e000";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-video:before {
+  content: "\e001";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-twitterbird:before {
+  content: "\e002";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-tv4playicon:before {
+  content: "\e003";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-tv:before {
+  content: "\e004";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-tickets:before {
+  content: "\e005";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-tag:before {
+  content: "\e006";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-star:before {
+  content: "\e007";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-speechbubbles:before {
+  content: "\e008";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-speechbubble:before {
+  content: "\e009";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-speakersound:before {
+  content: "\e00a";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-smartphone:before {
+  content: "\e00b";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-search:before {
+  content: "\e00c";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-quotationmark:before {
+  content: "\e00d";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-questionmark:before {
+  content: "\e00e";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-play:before {
+  content: "\e00f";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-person:before {
+  content: "\e010";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-people:before {
+  content: "\e011";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-pen:before {
+  content: "\e012";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-paperstack:before {
+  content: "\e013";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_thumbup:before {
+  content: "\e014";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_tag:before {
+  content: "\e015";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_star:before {
+  content: "\e016";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_speechbubble:before {
+  content: "\e017";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_speakerx:before {
+  content: "\e018";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_search:before {
+  content: "\e019";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_roundarrow:before {
+  content: "\e01a";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_persondetails:before {
+  content: "\e01b";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_person:before {
+  content: "\e01c";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_openarrowup:before {
+  content: "\e01d";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_openarrowright:before {
+  content: "\e01e";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_openarrowleft:before {
+  content: "\e01f";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_openarrowdown:before {
+  content: "\e020";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_heart:before {
+  content: "\e021";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_fullarrow:before {
+  content: "\e022";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_filmframes:before {
+  content: "\e023";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_closedarrowup:before {
+  content: "\e024";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_closedarrowright:before {
+  content: "\e025";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_closedarrowleft:before {
+  content: "\e026";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_closedarrowdown:before {
+  content: "\e027";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-newspaper:before {
+  content: "\e028";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-megaphonealt:before {
+  content: "\e029";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-megaphone:before {
+  content: "\e02a";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-list:before {
+  content: "\e02b";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-linkarrow:before {
+  content: "\e02c";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-letter:before {
+  content: "\e02d";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-layers:before {
+  content: "\e02e";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-keyhole:before {
+  content: "\e02f";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-heart:before {
+  content: "\e030";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-hdmark:before {
+  content: "\e031";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-football:before {
+  content: "\e032";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-facebookf:before {
+  content: "\e033";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-eye:before {
+  content: "\e034";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-cloud:before {
+  content: "\e035";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-clockhollow:before {
+  content: "\e036";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-clock:before {
+  content: "\e037";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-check:before {
+  content: "\e038";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-checkboard:before {
+  content: "\e039";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-camera:before {
+  content: "\e03a";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-box:before {
+  content: "\e03b";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-blankcircle:before {
+  content: "\e03c";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-barchart:before {
+  content: "\e03d";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-arrowright:before {
+  content: "\e03e";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-arrow:before {
+  content: "\e03f";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-linkarrow-up:before {
+  content: "\e00a";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-linkarrow-left:before {
+  content: "\e00b";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-linkarrow_down:before {
+  content: "\e00c";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-play_up:before {
+  content: "\e040";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-play_left:before {
+  content: "\e041";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-play_down:before {
+  content: "\e042";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-o_camera:before {
+  content: "\e043";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-no_phone:before {
+  content: "\e044";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-no_globe:before {
+  content: "\e045";
+  font-size: 32px;
+  color: #821cd3; }
