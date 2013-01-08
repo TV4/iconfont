@@ -71,7 +71,9 @@ var icons = [
   'icon-play_down',
   'icon-o_camera',
   'icon-no_phone',
-  'icon-no_globe'
+  'icon-no_globe',
+  'icon-loader',
+  'icon-new-tab'
 ];
 
 function createList () {

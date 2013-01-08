@@ -231,11 +231,11 @@ table {
 
 @font-face {
   font-family: "tv4icons_v1";
-  src: url("../../fonts/tv4icons_v1.eot?#iefix") format("embedded-opentype"), url("../../fonts/tv4icons_v1.svg#tv4icons_v1") format("svg"), url("../../fonts/tv4icons_v1.woff") format("woff"), url("../../fonts/tv4icons_v1.ttf") format("truetype");
+  src: url("../../fonts/tv4icons.eot?#iefix") format("embedded-opentype"), url("../../fonts/tv4icons.woff") format("woff"), url("../../fonts/tv4icons.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
-.icon-cross:before, .icon-video:before, .icon-twitterbird:before, .icon-tv4playicon:before, .icon-tv:before, .icon-tickets:before, .icon-tag:before, .icon-star:before, .icon-speechbubbles:before, .icon-speechbubble:before, .icon-speakersound:before, .icon-smartphone:before, .icon-search:before, .icon-quotationmark:before, .icon-questionmark:before, .icon-play:before, .icon-person:before, .icon-people:before, .icon-pen:before, .icon-paperstack:before, .icon-o_thumbup:before, .icon-o_tag:before, .icon-o_star:before, .icon-o_speechbubble:before, .icon-o_speakerx:before, .icon-o_search:before, .icon-o_roundarrow:before, .icon-o_persondetails:before, .icon-o_person:before, .icon-o_openarrowup:before, .icon-o_openarrowright:before, .icon-o_openarrowleft:before, .icon-o_openarrowdown:before, .icon-o_heart:before, .icon-o_fullarrow:before, .icon-o_filmframes:before, .icon-o_closedarrowup:before, .icon-o_closedarrowright:before, .icon-o_closedarrowleft:before, .icon-o_closedarrowdown:before, .icon-newspaper:before, .icon-megaphonealt:before, .icon-megaphone:before, .icon-list:before, .icon-linkarrow:before, .icon-letter:before, .icon-layers:before, .icon-keyhole:before, .icon-heart:before, .icon-hdmark:before, .icon-football:before, .icon-facebookf:before, .icon-eye:before, .icon-cloud:before, .icon-clockhollow:before, .icon-clock:before, .icon-check:before, .icon-checkboard:before, .icon-camera:before, .icon-box:before, .icon-blankcircle:before, .icon-barchart:before, .icon-arrowright:before, .icon-arrow:before, .icon-linkarrow-up:before, .icon-linkarrow-left:before, .icon-linkarrow_down:before, .icon-play_up:before, .icon-play_left:before, .icon-play_down:before, .icon-o_camera:before, .icon-no_phone:before, .icon-no_globe:before {
+.icon-cross:before, .icon-video:before, .icon-twitterbird:before, .icon-tv4playicon:before, .icon-tv:before, .icon-tickets:before, .icon-tag:before, .icon-star:before, .icon-speechbubbles:before, .icon-speechbubble:before, .icon-speakersound:before, .icon-smartphone:before, .icon-search:before, .icon-quotationmark:before, .icon-questionmark:before, .icon-play:before, .icon-person:before, .icon-people:before, .icon-pen:before, .icon-paperstack:before, .icon-o_thumbup:before, .icon-o_tag:before, .icon-o_star:before, .icon-o_speechbubble:before, .icon-o_speakerx:before, .icon-o_search:before, .icon-o_roundarrow:before, .icon-o_persondetails:before, .icon-o_person:before, .icon-o_openarrowup:before, .icon-o_openarrowright:before, .icon-o_openarrowleft:before, .icon-o_openarrowdown:before, .icon-o_heart:before, .icon-o_fullarrow:before, .icon-o_filmframes:before, .icon-o_closedarrowup:before, .icon-o_closedarrowright:before, .icon-o_closedarrowleft:before, .icon-o_closedarrowdown:before, .icon-newspaper:before, .icon-megaphonealt:before, .icon-megaphone:before, .icon-list:before, .icon-linkarrow:before, .icon-letter:before, .icon-layers:before, .icon-keyhole:before, .icon-heart:before, .icon-hdmark:before, .icon-football:before, .icon-facebookf:before, .icon-eye:before, .icon-cloud:before, .icon-clockhollow:before, .icon-clock:before, .icon-check:before, .icon-checkboard:before, .icon-camera:before, .icon-box:before, .icon-blankcircle:before, .icon-barchart:before, .icon-arrowright:before, .icon-arrow:before, .icon-linkarrow-up:before, .icon-linkarrow-left:before, .icon-linkarrow_down:before, .icon-play_up:before, .icon-play_left:before, .icon-play_down:before, .icon-o_camera:before, .icon-no_phone:before, .icon-no_globe:before, .icon-loader:before, .icon-new-tab:before {
   font-family: "tv4icons_v1";
   font-style: normal;
   speak: none;
@@ -656,5 +656,15 @@ body {
 
 .icon-no_globe:before {
   content: "\e045";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-loader:before {
+  content: "\e046";
+  font-size: 32px;
+  color: #821cd3; }
+
+.icon-new-tab:before {
+  content: "\e052";
   font-size: 32px;
   color: #821cd3; }
